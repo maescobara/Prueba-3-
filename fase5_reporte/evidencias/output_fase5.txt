@@ -1,0 +1,56 @@
+======================================================================
+CERTIFICADO DE COMPLIANCE Y AUDITORÍA DE RED AUTOMATIZADA
+======================================================================
+
+SECCIÓN 1: DATOS DEL ALUMNO Y CONTROL DE EMISIÓN
+----------------------------------------------------------------------
+* Nombre Completo  : Maximiliano Andrés Escobar Álvarez
+* Código de Curso  : 001V-05
+* Fecha de Emisión : 2026-06-19 08:48:25
+* Estación de VM   : labvm
+
+SECCIÓN 2: ALCANCE DE LA AUDITORÍA E INFRAESTRUCTURA OBJETIVO
+----------------------------------------------------------------------
+* Empresa Cliente      : Operadora Logistica SA
+* Hostname del Router  : RTR-OPLOG
+* Dirección IP Target  : 192.168.56.106
+* Protocolos Auditados : NETCONF, RESTCONF, SSH, Genie Learn/Diff
+
+SECCIÓN 3: RESULTADOS DE LA VALIDACIÓN PROTOCOLAR VÍA NETCONF (FASE 3)
+----------------------------------------------------------------------
+* Estado de Verificación : CONFORME (5/5 OK)
+* Criterios Evaluados    : Hostname, IP Loopback, Máscara Loopback, 
+                           Descripción WAN, Servidor NTP.
+* Almacenamiento Raw     : fase3_validacion_netconf/evidencias/
+
+SECCIÓN 4: RESULTADOS DE LA VALIDACIÓN PROTOCOLAR VÍA RESTCONF (FASE 4)
+----------------------------------------------------------------------
+* Estado de Verificación : CONFORME (4/4 OK)
+* Criterios Evaluados    : Hostname Corporativo, IP Loopback, 
+                           Descripción Interfaz WAN, Servidor NTP.
+* Almacenamiento Payloads: fase4_validacion_restconf/evidencias/responses/
+
+SECCIÓN 5: ANÁLISIS DE DERIVA DE CONFIGURACIÓN (CENSO GENIE DIFF)
+----------------------------------------------------------------------
+* Estado del Directorio  : fase5_reporte/evidencias/snapshot_final_001V-05
+* Estado de Cambios (Diff): DETECTADO / COMPILADO EXITOSAMENTE
+* Análisis de Deriva     : Genie detectó con éxito las diferencias de estado 
+                           operativo en 'interface', 'platform' y 'routing'.
+
+SECCIÓN 6: MATRIZ DE CONFIGURACIÓN Y CRITERIOS COMPORTAMENTALES
+----------------------------------------------------------------------
+[OK] Verificación de Nombre de Host Corporativo (YANG Native)
+[OK] Verificación de Direccionamiento IP Loopback de Gestión (YANG IETF)
+[OK] Verificación de Etiquetado y Descripción de Enlace WAN (YANG IETF)
+[OK] Verificación de Sincronismo Reloj Servidor NTP (YANG Native)
+
+SECCIÓN 7: DICTAMEN DE CONFORMIDAD GLOBAL Y CIERRE
+----------------------------------------------------------------------
+De acuerdo con las validaciones automatizadas cruzadas mediante NETCONF, RESTCONF 
+y el análisis transaccional de diferencias (Genie Diff), la infraestructura 
+analizada cumple con la totalidad de los parámetros de diseño establecidos.
+
+RESULTADO FINAL: CONFORME
+======================================================================
+
+[INFO] Certificado guardado en: evidencias/certificado_compliance_001V-05.txt
