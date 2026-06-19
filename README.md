@@ -17,15 +17,17 @@ Dentro de las acciones que se realizaron se configuró el hostname corporativo, 
 
 ## 3. Herramientas Utilizadas
 
-Router: Cisco CSR1000v — IOS-XE 16.9 
-IP Router: 192.168.56.106 
-Maquina virtual con DEVASC VM — Ubuntu (labvm)
-Python (versión 3.8.10)
-Ansible
-pyATS/Genie (Última versión)
-Librería NETCONF (ncclient)
-Librería RESTCONF (requests)
-Red  (VirtualBox Host-Only)
+*|Router: Cisco CSR1000v — IOS-XE 16.9 
+*|IP Router: 192.168.56.106 
+*|Maquina virtual con DEVASC VM — Ubuntu (labvm)
+*|Python (versión 3.8.10)
+*|Ansible
+*|pyATS/Genie (Última versión)
+*|Librería NETCONF (ncclient)
+*|Librería RESTCONF (requests)
+*|Red  (VirtualBox Host-Only)
+
+---
 
 ## 4. Tecnologías Empleadas y Justificación
 - pyATS/Genie: Se usó durante la Fase 1 para documentar el estado inicial del router vía SSH, antes de aplicar cualquier cambio. También en la Fase 5 para comparar el estado final con el baseline.
@@ -37,26 +39,26 @@ Red  (VirtualBox Host-Only)
 
 ## 5. Configuración Aplicada
 
-Hostname: RTR-OPLOG
-Banner MOTD: ACCESO RESTRINGIDO - OPLOG
-Servidor NTP: 1.1.1.1
-Descripción GigabitEthernet1: Enlace-WAN-Antofagasta
-Interfaz Loopback: Loopback10 — 10.1.5.1/24
-NETCONF: Habilitado (puerto 830)
-RESTCONF: Habilitado (HTTPS)
-HTTP Seguro: Habilitado
+*|Hostname: RTR-OPLOG
+*|Banner MOTD: ACCESO RESTRINGIDO - OPLOG
+*|Servidor NTP: 1.1.1.1
+*|Descripción GigabitEthernet1: Enlace-WAN-Antofagasta
+*|Interfaz Loopback: Loopback10 — 10.1.5.1/24
+*|NETCONF: Habilitado (puerto 830)
+*|RESTCONF: Habilitado (HTTPS)
+*||HTTP Seguro: Habilitado
 
 ---
 
 ## 6. Resultados de Validación
 ( Criterio           | NETCONF  | RESTCONF )
 --------------------------------------------
-Hostname corporativo | CONFORME | CONFORME |
-IP Loopback          | CONFORME | CONFORME |
-Máscara Loopback     | CONFORME | — |
-Descripción WAN      | CONFORME | CONFORME |
-Servidor NTP         | CONFORME | CONFORME |
-Resultado global     | **5/5 CONFORME** | **4/4 CONFORME** |
+*|Hostname corporativo | CONFORME | CONFORME |
+*|IP Loopback          | CONFORME | CONFORME |
+*|Máscara Loopback     | CONFORME | — |
+*|Descripción WAN      | CONFORME | CONFORME |
+*|Servidor NTP         | CONFORME | CONFORME |
+*|Resultado global     | **5/5 CONFORME** | **4/4 CONFORME** |
 
 ---
 
