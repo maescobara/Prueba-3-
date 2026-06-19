@@ -1,0 +1,36 @@
+
+PLAY [Aprovisionamiento CSR1kv - Operadora Logistica SA] ***********************
+
+TASK [E8 - Respaldar configuracion actual] *************************************
+ok: [csr1kv]
+
+TASK [E8 - Guardar respaldo en archivo] ****************************************
+changed: [csr1kv -> localhost]
+
+TASK [E7b - Habilitar NETCONF] *************************************************
+ok: [csr1kv]
+
+TASK [E7b - Habilitar RESTCONF] ************************************************
+ok: [csr1kv]
+
+TASK [E7b - Habilitar servidor HTTP seguro] ************************************
+ok: [csr1kv]
+
+TASK [E7c - Configurar hostname corporativo] ***********************************
+changed: [csr1kv]
+
+TASK [E7c - Configurar banner de acceso] ***************************************
+changed: [csr1kv]
+
+TASK [E7c - Configurar servidor NTP] *******************************************
+changed: [csr1kv]
+
+TASK [E7c - Configurar descripcion interfaz GigabitEthernet1] ******************
+changed: [csr1kv]
+
+TASK [E7c - Crear interfaz Loopback con IP de gestion] *************************
+changed: [csr1kv]
+
+PLAY RECAP *********************************************************************
+csr1kv                     : ok=10   changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
