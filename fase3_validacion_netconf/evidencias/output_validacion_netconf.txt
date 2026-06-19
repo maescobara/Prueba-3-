@@ -1,0 +1,20 @@
+============================================================
+Script  : validacion_netconf.py
+Alumno  : Maximiliano Andrés Escobar Álvarez | Codigo: 001V-05
+Fecha   : 2026-06-19 06:22:55
+Host VM : labvm
+============================================================
+
+Conectando via NETCONF a 192.168.56.106 puerto 830...
+[INFO] Modelo utilizado: Cisco-IOS-XE-native
+[INFO] evidencias/rpc_reply_raw.xml guardado exitosamente.
+
+=== REPORTE DE VALIDACION NETCONF ===
+[OK]   1/5 Hostname          : RTR-OPLOG
+[OK]   2/5 IP Loopback       : 10.1.5.1
+[OK]   3/5 Mascara Loopback  : 255.255.255.0
+[OK]   4/5 Descripcion WAN   : Enlace-WAN-Antofagasta
+[OK]   5/5 Servidor NTP      : 1.1.1.1
+============================================================
+RESULTADO FINAL: 5/5 OK - CONFORME
+============================================================
