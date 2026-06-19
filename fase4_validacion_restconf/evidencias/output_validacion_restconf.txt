@@ -1,0 +1,27 @@
+============================================================
+Script  : validacion_restconf.py
+Alumno  : Maximiliano Andrés Escobar Álvarez | Codigo: 001V-05
+Fecha   : 2026-06-19 08:14:30
+Host VM : labvm
+============================================================
+
+[GET] https://192.168.56.106/restconf/data/Cisco-IOS-XE-native:native/hostname
+[INFO] Guardado en evidencias/responses/get_hostname.json
+
+[GET] https://192.168.56.106/restconf/data/ietf-interfaces:interfaces/interface=Loopback10
+[INFO] Guardado en evidencias/responses/get_loopback.json
+
+[GET] https://192.168.56.106/restconf/data/ietf-interfaces:interfaces/interface=GigabitEthernet1
+[INFO] Guardado en evidencias/responses/get_interfaces.json
+
+[GET] https://192.168.56.106/restconf/data/Cisco-IOS-XE-native:native/ntp
+[INFO] Guardado en evidencias/responses/get_ntp.json
+
+=== REPORTE DE VALIDACION RESTCONF ===
+[OK]   Hostname corporativo: RTR-OPLOG
+[OK]   IP Loopback: 10.1.5.1
+[OK]   Descripcion WAN: Enlace-WAN-Antofagasta
+[OK]   Servidor NTP: 1.1.1.1
+============================================================
+RESULTADO FINAL: 4/4 OK - CONFORME
+============================================================
